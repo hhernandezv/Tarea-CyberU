@@ -1,0 +1,39 @@
+
+$tama:5em;
+@mixin parrafos{
+    margin:0 0 20px 0;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#titulo{
+
+    padding:10px 5%;
+    border-radius:5px;
+    width:80%;
+    margin:20px 5%;
+    background-color:rgba(125,125,125, 0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    li{
+        text-decoration:none;
+        list-style:none;
+    }
+}
+
+
+h2{
+    font-size:$tama;
+    margin:0 0 1rem;
+    background-color:rgba(0,125,125, 0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#textos li{
+    font-size:1.2rem;
+    font-weight: 300;
+    color:red;
+ }
+
+#textos2 p{
+    @include parrafos;
+}
